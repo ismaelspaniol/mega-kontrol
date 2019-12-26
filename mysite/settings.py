@@ -31,7 +31,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'core.apps.CoreConfig',
-    'notes.apps.NotesConfig'
+    'notes.apps.NotesConfig',
+    'empresa',
 ]
 
 MIDDLEWARE = [
@@ -90,7 +91,6 @@ DATABASES = {
 }
 
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -129,7 +129,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-REST_FRAMEWORK  = {
+REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
@@ -171,6 +171,6 @@ WEBPACK_LOADER = {
         }
 }
 
-APPEND_SLASH=False
+APPEND_SLASH = False
 
 CORS_ALLOW_CREDENTIALS = True
